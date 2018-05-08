@@ -35,7 +35,6 @@ h5 {
 }
 
 .side_header {
-  /*height: 136px;*/
   transition: min-height 0.3s;
 }
 
@@ -114,7 +113,7 @@ main {
 
  /*
   *
-  * side images
+  * skill images
   *
   */
 
@@ -134,7 +133,7 @@ main {
    height: 300px;
    margin: 1em;
    vertical-align: top;
-   background-image: url("../images/full_stack.jpg");
+   background-image: url(../images/full_stack.jpg);
    background-repeat: no-repeat;
    background-position: center;
    margin-top: 12px;
@@ -148,7 +147,7 @@ main {
  */
 
 .featured_work {
-  height: 200px;
+  height: 225px;
   padding: 1em;
   width: 100%;
   margin-left: auto;
@@ -165,7 +164,7 @@ main {
 
 .featured_item {
   width: 33.3%;
-  height: 150px;
+  height: 175px;
   vertical-align: bottom;
   text-align: center;
   margin-left: auto;
