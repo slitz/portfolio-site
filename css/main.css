@@ -1,0 +1,221 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  border-bottom: 3px solid;
+  min-height: 136px;
+  transition: min-height 0.3s;
+  width: 100%;
+  display: flex;
+}
+
+.side_header {
+  /*height: 136px;*/
+  transition: min-height 0.3s;
+}
+
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_logo {
+  width: 40%;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.logo_image {
+  zoom: 40%;
+}
+
+.header_title {
+  text-align: right;
+  width: 60%;
+}
+
+.header_name {
+  font-weight: 300;
+  font-size: 4em;
+  margin: 0.25em 0.25em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header_profession {
+  padding-bottom: 1.5em;
+  margin-right: 14px;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+ .left_column{
+   width: 10%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .right_column{
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .content {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ /*
+  *
+  * side images
+  *
+  */
+
+  .skill_image {
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+/*
+ *
+ * main image
+ *
+ */
+
+ .main_image {
+   height: 300px;
+   margin: 1em;
+   vertical-align: top;
+   background-image: url("../images/full_stack.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-top: 12px;
+   width: 100%;
+ }
+
+/*
+ *
+ * Featured Projects
+ *
+ */
+
+.featured_work {
+  height: 200px;
+  padding: 1em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured_work_header {
+  width: 100%;
+  height: 40px;
+}
+
+.featured_item {
+  width: 33.3%;
+  height: 150px;
+  vertical-align: bottom;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured_image {
+  position: relative;
+  vertical-align: baseline;
+  height: 118px;
+  zoom: 75%;
+}
+
+.caption {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .featured_item {
+    width: 100%;
+  }
+  .header_name {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+  .featured_item {
+    width: 50%;
+  }
+  .header_name {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .left_column {
+    visibility: hidden;
+    display: none;
+  }
+  .header {
+    min-height: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  body {
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
